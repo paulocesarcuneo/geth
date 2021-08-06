@@ -53,3 +53,13 @@ web3 account extract --keyfile data/keystore/UTC--2021-08-06T14-59-33.122338252Z
 web3 account extract --keyfile data/keystore/UTC--2021-08-06T14-59-33.122338252Z--00fdd309a96468599147f7de3fddd2171e50cec0 --password supersecret
 ./startup 
 PORT=8080 ./startup 
+geth init --datadir data genesis.json
+ls
+rm -rf geth keystore data
+ls
+geth account new --datadir data
+geth init --datadir data genesis.json
+geth --datadir data --networkid 15
+web3 -h
+web3 account extract --keystore data/keystore/UTC--2021-08-06T20-43-54.109020367Z--54b16d9f3d83c4261e60c98253f60943ad487a7d --password supersecret
+web3 account extract --keyfile data/keystore/UTC--2021-08-06T20-43-54.109020367Z--54b16d9f3d83c4261e60c98253f60943ad487a7d --password supersecret
