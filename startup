@@ -2,13 +2,14 @@
 
 DATADIR="/home/eth/data"
 geth \
-    --datadir $DATADIR \
+    --datadir "$DATADIR" \
     --networkid 15 \
     --nodiscover \
     --allow-insecure-unlock \
     --http \
-    --http.port $PORT \
+    --http.port "$PORT" \
     --port "30303" \
+    --http.vhosts "*" \
     --http.corsdomain "*" \
     --http.api eth,web3,personal,net \
     --http.addr "0.0.0.0" \
