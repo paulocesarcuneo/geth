@@ -13,7 +13,7 @@ RUN adduser --disabled-login --gecos "" eth
 
 USER eth
 WORKDIR /home/eth
-COPY . .
+COPY --chown=eth:eth . .
 
 CMD ./startup  
 
