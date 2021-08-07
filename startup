@@ -16,5 +16,6 @@ geth \
     --nat "any" \
     --maxpeers 0 \
     --unlock "0x54b16d9f3D83c4261e60c98253F60943aD487a7d" \
-    --password "password.sec" 
+    --password "password.sec" \
+    --mine 
 
